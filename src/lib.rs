@@ -38,7 +38,7 @@ impl UefiDisplay {
             mode_info.resolution().1 as u32,
         );
         let stride = mode_info.stride() as u32;
-        let buf_len = width
+        let buf_len = stride
             .checked_mul(height)
             .and_then(|p| p.checked_mul(4))
             .ok_or(UefiDisplayError::InvalidResolution)?;
