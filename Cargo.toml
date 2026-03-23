@@ -11,7 +11,7 @@ keywords = ["uefi", "graphics", "no-std", "embedded"]
 categories = ["no-std", "embedded", "hardware-support"]
 
 [dependencies]
-uefi = "0.35"
+uefi = "0.37"
 embedded-graphics = "0.8"
 thiserror = { version = "2.0", default-features = false }
 
